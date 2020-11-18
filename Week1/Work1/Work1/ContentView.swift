@@ -9,8 +9,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    var users: [String] = ["删除排序数组中的重复项", "旋转数组"]
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            List {
+                Section {
+                    navigationBarTitle("作业列表")
+                }
+                
+                Section {
+                    ForEach(users, id: \.count) {user in
+                        WorkRow(user: user)
+                    }
+                }
+            }
+            .listStyle(GroupedListStyle())
+            .navigationBarItems(trailing: EditButton())
+        }
+        
     }
 }
 
