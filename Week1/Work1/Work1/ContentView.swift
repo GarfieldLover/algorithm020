@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var users: [String] = ["删除排序数组中的重复项", "旋转数组"]
+    var users: [String] = ["两数之和", "删除排序数组中的重复项", "旋转数组", "合并两个有序链表"]
     
     var body: some View {
         NavigationView {

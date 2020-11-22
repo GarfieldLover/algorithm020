@@ -9,7 +9,8 @@
 import Foundation
 
 class Solution_twoSum {
-    
+  
+
     func twoSumQ()  {
         print(twoSum([2,7,3,2], 4))
     }
